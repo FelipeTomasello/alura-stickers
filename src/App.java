@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -10,7 +12,7 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         //fazer uma conexão http e buscar os top 250 filmes.
-        String url = "https://alura-filmes.herokuapp.com/conteudos";
+        String url = "https://api.mocki.io/v2/549a5d8b/Top250Movies";
         URI endereco = URI.create(url);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder(endereco).GET().build();
@@ -23,10 +25,20 @@ public class App {
         System.out.println(listaDeFilmes.size());
 
         //exibir e manipular os dados.
+        var geradora = new GeradoraDeFigurinhas();
+
         for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
-            System.out.println(filme.get("imDbRating"));
+
+            String urlImage = filme.get("image");
+            String title = filme.get("title");
+
+            InputStream inputStream = new URL(urlImage).openStream();
+            var nomeArquivo = title + ".png";
+
+            geradora.cria(inputStream, nomeArquivo);
+
+
+            System.out.println(title);
             System.out.println();
         }
     }
