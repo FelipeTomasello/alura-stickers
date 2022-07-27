@@ -1,18 +1,26 @@
-## Getting Started
+# Imersão Java - Alura Sticker
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Projeto com o entuito de criar uma aplicação backend com a linguagem java, que irá consumir uma API de filmes e criar stickers personalizados para enviar por whatsapp.
 
-## Folder Structure
+| 🪧 Vitrine.Dev |     |
+| -------------  | --- |
+| ✨ Nome        | Alura Sticker
+| 🏷️ Tecnologias | Java, Spring, MongoDB e Git
 
-The workspace contains two folders by default, where:
+# Etapas:
+  - Consumir uma API de filmes.
+  - Construir um gerador de figurinhas explorando as bibliotecas nativas do java.
+  - Refatoração focada em orientação a abjetos e encapsulamento.
+  - Construir uma API REST, utilizando Spring e um banco de dados NOSQL (MongoDB). 
+  
+## 🔨 Tecnologias
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- ``Java - 17.0.2 2022-01-18 LTS``
+- ``Spring - 3.0``
+- ``MongoDB``
+- ``Git``
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+ ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+ ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+ ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+ ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
